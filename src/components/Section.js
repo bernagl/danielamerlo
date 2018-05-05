@@ -5,7 +5,7 @@ export default class Section extends Component {
   state = { selected: '', modal: false }
 
   setImage(selected) {
-    this.setState({ selected, modal: true })
+    this.setState({ selected, modal: selected ? true : false })
   }
 
   render() {
@@ -13,9 +13,25 @@ export default class Section extends Component {
     return (
       <div className="section">
         {modal && (
-          <div className="modal" style={{ width: 500, height: 500, position: 'fixed', top: 50, bottom: 50, left: 50, right: 50 }}>
-            <img src={selected} alt="" />
-          </div>
+          <React.Fragment>
+            <div className="overlay" onClick={this.setImage.bind(this, null)}>
+              <span className="close" onClick={this.setImage.bind(this, null)}>
+                Close
+              </span>
+            </div>
+            <div
+              className="modal"
+              style={{
+                background: `url(${selected}) no-repeat fixed center`,
+                position: 'fixed',
+                top: 50,
+                bottom: 50,
+                left: 50,
+                right: 50,
+                zIndex: 2
+              }}
+            />
+          </React.Fragment>
         )}
         {images.map(({ url }) => (
           // <div className="img-container">
