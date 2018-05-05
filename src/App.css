@@ -1,0 +1,128 @@
+@import '~bootstrap-4-grid/css/grid.min.css';
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+body {
+  position: relative;
+  background: #f7f4f4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Sidebar */
+
+.sidebar {
+  max-width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  padding: 20px;
+  /* text-align: center; */
+  /* border-right: 1px solid rgb(34, 33, 33); */
+  padding-left: 2em;
+}
+
+/* .sidebar .title {
+  width: 100%;
+}
+*/
+
+.sidebar .title h1 {
+  font-size: 24px;
+  color: #b17389;
+}
+
+.sidebar .title {
+  height: 50px;
+}
+
+.sidebar .link {
+  color: #52454a;
+  display: inherit;
+  text-decoration: none;
+  margin: 15px 0px;
+  font-size: 1.5em;
+  transition: 1s;
+}
+
+.sidebar .link:hover {
+  color: #c5929b;
+}
+
+/* Container */
+
+.container {
+  margin-left: 305px;
+  padding: 0px !important;
+  margin-right: 5px;
+  width: auto;
+}
+
+/* Section */
+
+.section {
+  -moz-column-width: 13em;
+  column-width: 18em;
+  -moz-column-gap: 1em;
+  column-gap: 5px;
+  background-color: #f7f4f4;
+}
+
+.section .img-container {
+  display: inline-block;
+  padding: 0rem;
+  width: 100%;
+  background: #efefef;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.section .img-container:hover {
+  transform: scale(1.005);
+  opacity: .8;
+}
+
+/* Modal */
+
+.modal {
+  animation: modal
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: scale(0)
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
