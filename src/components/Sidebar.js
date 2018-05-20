@@ -22,6 +22,9 @@ export default () => {
         >
           Peinado
         </NavLink>
+        <NavLink exact to="/contacto" activeClassName="active" className="link">
+          <span className="link-text">Contacto</span>
+        </NavLink>
       </div>
     </div>
   )

@@ -73,6 +73,11 @@ body {
   transition: 1s;
 }
 
+.sidebar .link.active {
+  color: #c5929b;
+  /* text-decoration: underline; */
+}
+
 .sidebar .link:hover {
   color: #c5929b;
 }
